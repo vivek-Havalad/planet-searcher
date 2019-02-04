@@ -1,0 +1,47 @@
+.headContainer{
+  width: calc(100% - 2%);
+  height: calc(13% - 2%);
+  margin: 1%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.searchBox{
+
+}
+.logout-btn{
+  display: inline-block;
+  float: right;
+  padding: 5px;
+  font-size: 20px;
+  color: #fff;
+  padding-right: 15px;
+  margin-top: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: ariel;
+}
+.planetsDisp{
+  background: #ff6565;
+  margin: 5px;
+  padding: 10px;
+  color: #fff;
+  width: fit-content;
+  border-radius: 12px;
+}
+.inputSearchPlanets{
+  width: 98%;
+  height: 47px;
+  font-size: 25px;
+  border-radius: 5px;
+  padding-left: 12px;
+  background-color: white;
+}
+.displayContainer{
+  width: calc(98% - 10px);
+  height: calc(100% - 17% - 25px);
+  margin: 1%;
+  border: 2px solid #928888;
+  overflow: auto;
+  padding: 5px;
+  border-radius: 15px;
+}

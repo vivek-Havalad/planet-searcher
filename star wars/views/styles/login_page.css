@@ -1,0 +1,62 @@
+.mainContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginHeader{
+  padding: 9px;
+  background: #9c9c9c
+}
+.loginHeaderText{
+  text-align: left;
+  color: #fff;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: ariel;
+}
+.loginContainer{
+  width: 30%;
+  height: 43%;
+  overflow: auto;
+  background: aliceblue;
+}
+.loginUserName{
+    padding: 8px;
+}
+.loginPassword{
+    padding: 8px;
+}
+.loginSubmit{
+    padding: 8px;
+}
+.loginValidator{
+    padding: 8px;
+}
+.user_name{
+  padding: 2px 0px;
+  font-size: 17px;
+}
+.loginUserName input{
+  width: 86%;
+  height: 19px;
+}
+.user_password{
+  padding: 2px 0px;
+  font-size: 17px;
+}
+.loginPassword input{
+  width: 86%;
+  height: 19px;
+}
+.submitBtn{
+  padding: 5px;
+  background: #dddae0;
+  float: right;
+  margin-right: 5%;
+}
+.loginValidatorText{
+  padding: 8px;
+  margin-top: 5px;
+  text-align: center;
+  color: red;
+}

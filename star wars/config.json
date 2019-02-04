@@ -1,0 +1,6 @@
+{
+  "secretService" : "starSaber007",
+  "port" : 9000,
+  "peopleUrl" : "https://swapi.co/api/people/",
+  "planetsUrl" : "https://swapi.co/api/planets/"
+}

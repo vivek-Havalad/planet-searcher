@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/search_page.css">
+    <script src="/scripts/libs/angular.min.js" charset="utf-8"></script>
+    <script src="/scripts/search_page.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="searchApp" ng-controller='searchController' ng-init="loadPlanetsName()">
+    <div class="headerCls">
+      <div class="headerClsTitle">
+        Star Wars
+      </div>
+      <div class="logout-btn" ng-click="logout()">
+        logout
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="headContainer">
+        <div class="searchBox">
+          <input class="inputSearchPlanets" list="planets" placeholder="Search Planets..." ng-model="dataContainer.selectedPlanetName">
+          <datalist id = "planets">
+            <option ng-repeat="planetsInfo in dataContainer.planetLst" value="{{planetsInfo.name}}">{{planetsInfo.name}}</option>
+          </datalist>
+        </div>
+      </div>
+      <div class="displayContainer">
+        <div class="planetsDisp" ng-repeat="eachPSize in dataContainer.planetNameSize | filter:filterPlanetNames" style="font-size:{{eachPSize.value}}">{{eachPSize.name}}
+        </div>
+    </div>
+    <div class="footerCls">
+      <div class="footerText">
+        star_wars rights reserved
+      </div>
+    </div>
+  </body>
+</html>

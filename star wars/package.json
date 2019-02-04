@@ -1,0 +1,27 @@
+{
+  "name": "star_wars",
+  "version": "1.0.0",
+  "description": "Let's to search the planets and there population ",
+  "main": "node server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "vivek-Havalad"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "star_wars"
+  ],
+  "author": "vivek H",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "request": "^2.88.0"
+  }
+}

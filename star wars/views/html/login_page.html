@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/login_page.css">
+    <script src="/scripts/libs/angular.min.js" charset="utf-8"></script>
+    <script src="/scripts/login_page.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="loginApp" ng-controller='loginController'>
+    <div class="headerCls">
+      <div class="headerClsTitle">
+        Star Wars
+      </div>
+    </div>
+    <div class="mainContainer">
+      <div class="loginContainer">
+        <div class="loginHeader">
+          <div class="loginHeaderText">Login</div>
+        </div>
+        <div class="loginUserName">
+          <div class = "user_name">User Name : </div>
+          <input type="text" name="UserName" value="" ng-model="hideController.user_name">
+        </div>
+        <div class="loginPassword">
+          <div class = "user_password">Password : </div>
+          <input type="password" name="UserPassword" value="" ng-model="hideController.user_password">
+        </div>
+        <div class="loginSubmit">
+          <button type="button" name="submit" class="submitBtn" ng-click="submitCntrl()">Submit</button>
+        </div>
+        <div class="loginValidator" ng-show="hideController.showError">
+          <div class="loginValidatorText">
+            Invalid User name or password
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footerCls">
+      <div class="footerText">
+        star_wars rights reserved
+      </div>
+    </div>
+  </body>
+</html>
